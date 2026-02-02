@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Productivity Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1>Smart Productivity</h1>
+        <div class="header-controls">
+          <div class="power-toggle">
+            <label class="switch">
+              <input type="checkbox" id="extensionToggle" checked>
+              <span class="slider-toggle"></span>
+            </label>
+            <span class="toggle-status" id="toggleStatus">ON</span>
+          </div>
+          <button id="settingsBtn" class="icon-btn" title="Settings">Settings</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+      <button class="tab-btn" data-tab="limits">Limits</button>
+      <button class="tab-btn" data-tab="blocked">Blocked</button>
+    </nav>
+
+    <!-- Dashboard Tab -->
+    <div id="dashboard" class="tab-content active">
+      <div class="section">
+        <h2>Today's Activity</h2>
+        <div class="total-time">
+          <div class="time-display">
+            <span class="time-value" id="totalTime">0h 0m</span>
+            <span class="time-label">Total Time</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Top Sites</h3>
+        <div id="topSites" class="sites-list">
+          <div class="empty-state">No activity tracked yet today</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <button id="refreshBtn" class="btn btn-secondary">Refresh Data</button>
+      </div>
+    </div>
+
+    <!-- Limits Tab -->
+    <div id="limits" class="tab-content">
+      <div class="section">
+        <h2>Set Time Limits</h2>
+        <p class="description">Set daily time limits for specific websites (in minutes)</p>
+        
+        <form id="limitForm" class="form">
+          <input type="text" id="limitDomain" placeholder="example.com" class="input" required>
+          <input type="number" id="limitMinutes" placeholder="Minutes" class="input" min="1" required>
+          <button type="submit" class="btn btn-primary">Add Limit</button>
+        </form>
+      </div>
+
+      <div class="section">
+        <h3>Active Limits</h3>
+        <div id="limitsList" class="limits-list">
+          <div class="empty-state">No limits set</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blocked Sites Tab -->
+    <div id="blocked" class="tab-content">
+      <div class="section">
+        <h2>Block Websites</h2>
+        <p class="description">Completely block access to distracting websites</p>
+        
+        <form id="blockForm" class="form">
+          <input type="text" id="blockDomain" placeholder="example.com" class="input" required>
+          <button type="submit" class="btn btn-danger">Block Site</button>
+        </form>
+      </div>
+
+      <div class="section">
+        <h3>Blocked Sites</h3>
+        <div id="blockedList" class="blocked-list">
+          <div class="empty-state">No sites blocked</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Settings</h2>
+          <button id="closeSettings" class="close-btn">Close</button>
+        </div>
+        <div class="modal-body">
+          <div class="setting-item">
+            <label class="checkbox-label">
+              <input type="checkbox" id="notificationsToggle" checked>
+              <span>Enable Notifications</span>
+            </label>
+          </div>
+          <div class="setting-item">
+            <label class="checkbox-label">
+              <input type="checkbox" id="trackingToggle" checked>
+              <span>Enable Time Tracking</span>
+            </label>
+          </div>
+          <div class="setting-item">
+            <label for="warningThreshold">Warning Threshold (%)</label>
+            <input type="range" id="warningThreshold" min="50" max="100" value="90" class="slider">
+            <span id="thresholdValue">90%</span>
+          </div>
+          <div class="setting-item">
+            <button id="resetData" class="btn btn-danger">Reset All Data</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
