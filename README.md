@@ -2,23 +2,23 @@
 
 A powerful Chrome extension that helps you track time spent on websites, set daily limits, and stay focused by reducing distractions.
 
-## Features ✨
+## Features
 
-### 1. **🔌 Extension ON/OFF Toggle**
+### 1. ** Extension ON/OFF Toggle**
 - **Master Control Switch** - Easily enable or disable all extension features
 - Located prominently in the header with visual status indicator
 - When OFF:
-  - ❌ Time tracking completely stopped
-  - ❌ All website blocking disabled
-  - ❌ Limits checking paused
+  -  Time tracking completely stopped
+  -  All website blocking disabled
+  -  Limits checking paused
 - When ON:
-  - ✅ Time tracking active
-  - ✅ Blocked websites restricted
-  - ✅ Limits enforced
+  -  Time tracking active
+  -  Blocked websites restricted
+  -  Limits enforced
 - Instant notifications when toggling
 - State persists across browser sessions
 
-### 2. **🚫 Enhanced Website Blocking System**
+### 2. ** Enhanced Website Blocking System**
 - **Complete Site Blocking** - Permanently block distracting websites
 - **Instant Blocking** - Sites are blocked immediately upon addition
 - **Smart URL Handling** - Automatically cleans domains (removes http://, www., etc.)
@@ -87,9 +87,9 @@ A powerful Chrome extension that helps you track time spent on websites, set dai
    - Find "Smart Productivity Assistant"
    - Click the pin icon to keep it visible
 
-## How to Use 📖
+## How to Use 
 
-### 🔌 Extension ON/OFF Toggle
+###  Extension ON/OFF Toggle
 - **Location**: Top-right corner of the extension popup (header)
 - **Toggle ON** (green switch):
   - Time tracking active
@@ -140,13 +140,13 @@ A powerful Chrome extension that helps you track time spent on websites, set dai
 - Blocked sites are checked every 5 seconds
 - New tabs are checked immediately upon opening
 
-### Settings ⚙️
+### Settings
 - **Enable Notifications**: Toggle browser notifications on/off
 - **Enable Time Tracking**: Toggle time tracking on/off (even when extension is ON)
 - **Warning Threshold**: Set when to receive warnings (50-100%)
 - **Reset All Data**: Clear all tracked data, limits, and blocked sites
 
-## Tips for Maximum Productivity 💡
+## Tips for Maximum Productivity
 
 1. **Use the ON/OFF Toggle**: Turn off the extension when browsing personally, turn it ON during work hours
 2. **Block First, Limit Later**: Start by blocking highly distracting sites, then add limits to others
@@ -199,7 +199,7 @@ Smart Productivity Assistant/
 - **scripting**: To inject content scripts for blocking pages dynamically
 - **host_permissions**: To monitor all websites for tracking and blocking
 
-## Troubleshooting 🔍
+## Troubleshooting
 
 ### Extension Not Tracking Time
 1. Check if extension toggle is ON (green switch in header)
