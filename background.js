@@ -31,18 +31,18 @@ chrome.runtime.onInstalled.addListener(() => {
   });
   
   // Set up daily reset alarm
-  chrome.alarms.create('dailyReset', { 
+  chrome.alarms.create('dailyReset', {
     when: getNextMidnight(),
     periodInMinutes: 1440 // 24 hours
   });
   
   // Set up periodic save alarm (every minute)
-  chrome.alarms.create('periodicSave', { 
-    periodInMinutes: 1 
+  chrome.alarms.create('periodicSave', {
+    periodInMinutes: 1
   });
   
   // Set up periodic block check (every 5 seconds)
-  chrome.alarms.create('blockCheck', { 
+  chrome.alarms.create('blockCheck', {
     periodInMinutes: 0.0833 // 5 seconds
   });
 });
