@@ -4,7 +4,7 @@ A powerful Chrome extension that helps you track time spent on websites, set dai
 
 
 ## Watch Demo Video
-👉 [Watch Demo](https://youtu.be/SVlvSl-nNx4)
+👉 [Watch Demo on YouTube](https://youtu.be/SVlvSl-nNx4)
 
 
 ## Features
