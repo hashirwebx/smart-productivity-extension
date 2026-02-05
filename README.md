@@ -2,6 +2,11 @@
 
 A powerful Chrome extension that helps you track time spent on websites, set daily limits, and stay focused by reducing distractions.
 
+
+## Watch Demo Video
+👉 [Watch Demo](https://youtu.be/SVlvSl-nNx4)
+
+
 ## Features
 
 ### 1. ** Extension ON/OFF Toggle**
